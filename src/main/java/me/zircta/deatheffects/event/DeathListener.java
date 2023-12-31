@@ -15,7 +15,7 @@ public class DeathListener {
     private final DeathEffectsConfig config = DeathEffects.config;
 
     @SubscribeEvent
-    public void onTick(DeathEvent event) {
+    public void onDeath(DeathEvent event) {
         if (!config.enabled) return;
 
         if (Minecraft.getMinecraft().theWorld != null) {
