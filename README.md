@@ -1,5 +1,5 @@
 # Death Effects
-Renders an effect when entities die.
+Spawns effects when players die.
 
 ---
 
