@@ -28,18 +28,24 @@ minecraft.version("1.8.9")
 repositories {
     mavenCentral()
     maven("https://jitpack.io")
+
     maven("https://repo.polyfrost.cc/releases")
+
     maven("https://repo.spongepowered.org/maven/")
+
     maven("https://gitlab.com/api/v4/projects/45235852/packages/maven")
     maven("https://gitlab.com/api/v4/projects/50863327/packages/maven")
 }
 
 dependencies {
+    compileOnly("com.github.Weave-MC:Weave-Loader:v0.2.4")
+
+    implementation("cc.polyfrost:oneconfig-1.8.9-forge:0.2.0-alpha+")
+
+    compileOnly("org.spongepowered:mixin:0.8.5")
+
     implementation("com.gitlab.candicey.zenithloader:Zenith-Loader:$ZENITH_LOADER_VERSION")
     implementation("com.gitlab.candicey.zenithcore:Zenith-Core:$ZENITH_CORE_VERSION")
-    implementation("cc.polyfrost:oneconfig-1.8.9-forge:0.2.0-alpha+")
-    compileOnly("com.github.Weave-MC:Weave-Loader:v0.2.4")
-    compileOnly("org.spongepowered:mixin:0.8.5")
 }
 
 tasks.test {

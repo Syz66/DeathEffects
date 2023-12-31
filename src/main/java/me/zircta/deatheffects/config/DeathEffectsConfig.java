@@ -8,7 +8,7 @@ import cc.polyfrost.oneconfig.config.annotations.Switch;
 import cc.polyfrost.oneconfig.config.data.Mod;
 import cc.polyfrost.oneconfig.config.data.ModType;
 
-public class ModConfig extends Config {
+public class DeathEffectsConfig extends Config {
     @Switch(
             name = "Enabled",
             description = "Set enabled status of the mod."
@@ -39,7 +39,7 @@ public class ModConfig extends Config {
     )
     public float amount = 2.0f;
 
-    public ModConfig() {
+    public DeathEffectsConfig() {
         super(new Mod("Death Effects", ModType.PVP), "death-effects.json");
         this.initialize();
     }

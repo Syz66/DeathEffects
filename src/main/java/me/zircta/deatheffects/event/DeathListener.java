@@ -1,7 +1,7 @@
 package me.zircta.deatheffects.event;
 
 import me.zircta.deatheffects.DeathEffects;
-import me.zircta.deatheffects.config.ModConfig;
+import me.zircta.deatheffects.config.DeathEffectsConfig;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation;
 import net.weavemc.loader.api.event.SubscribeEvent;
 
 public class DeathListener {
-    private final ModConfig config = DeathEffects.config;
+    private final DeathEffectsConfig config = DeathEffects.config;
 
     @SubscribeEvent
     public void onTick(DeathEvent event) {
