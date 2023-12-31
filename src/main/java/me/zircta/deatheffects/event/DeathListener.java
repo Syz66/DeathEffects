@@ -23,9 +23,11 @@ public class DeathListener {
                     EntityLivingBase livingEntity = (EntityLivingBase) entity;
                     if (livingEntity.deathTime == 1) {
                         switch (config.effect) {
-                            case 0 -> EffectUtils.spawnFlame(livingEntity, (int) config.amount);
+                            case 0 -> EffectUtils.spawnBlood(livingEntity, (int) config.amount);
                             case 1 -> EffectUtils.spawnCloud(livingEntity, (int) config.amount);
-                            case 2 -> EffectUtils.spawnBlood(livingEntity, (int) config.amount);
+                            case 2 -> EffectUtils.spawnExplosion(livingEntity, (int) config.amount);
+                            case 3 -> EffectUtils.spawnFlame(livingEntity, (int) config.amount);
+                            case 4 -> EffectUtils.spawnLightning(livingEntity);
                         }
                     }
                 }

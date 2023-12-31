@@ -17,7 +17,7 @@ public class DeathEffectsConfig extends Config {
 
     @Dropdown(
             name = "Effect",
-            options = {"Flames", "Cloud", "Blood"},
+            options = {"Blood", "Cloud", "Explosion", "Flames", "Lightning"},
             description = "Allows you to choose the death effect.",
             subcategory = "Effect options"
     )
