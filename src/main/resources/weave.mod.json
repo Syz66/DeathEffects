@@ -4,9 +4,6 @@
   "version": "1.0",
   "link": "https://github.com/Syz66/DeathEffects",
   "modId": "deatheffects",
-  "mixinConfigs": [
-    "deatheffects.mixins.json"
-  ],
   "entrypoints": [
     "me.zircta.deatheffects.DeathEffects"
   ]

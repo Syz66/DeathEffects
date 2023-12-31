@@ -34,6 +34,7 @@ public class DeathEffectsConfig extends Config {
             name = "Amount",
             min = 1.0f,
             max = 5.0f,
+            step = 1,
             description = "Allows you to change the amount of effects.",
             subcategory = "Effect options"
     )

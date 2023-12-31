@@ -12,7 +12,7 @@ Renders an effect when entities die.
 
 ## Build
 1. Clone the repository.
-2. Run `./gradlew clean build relocate` in the root directory.
+2. Run `./gradlew cleanBuild` in the root directory.
 3. The built and relocated jar files will be in build/libs.
 
 ---
