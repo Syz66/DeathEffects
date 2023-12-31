@@ -21,7 +21,7 @@ val ZENITH_CORE_VERSION = "1.4.1"
 val CONCENTRA_VERSION = "0.1.2"
 
 group = PACKAGE
-version = "1.0"
+version = "1.1"
 
 minecraft.version("1.8.9")
 
